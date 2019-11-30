@@ -32,10 +32,13 @@ public class github1 {
             System.out.println(0);
         }
         int i=0,j=1;
+        //双指针，第一个 第二个 比较
         while (j<nums.length){
+            //第一第二相等的话 第二个跳下一个 继续比较 返回下标+1
             if (nums[i]==nums[j]){
                 j++;
             }else{
+                //不等的话  一起跳下一个比较   i++  nums[i]=nums[j]  j++
                 i++;
                 nums[i]=nums[j];
                 j++;
